@@ -15,7 +15,7 @@ Part A: setting the template.
 2.	Log in as root once you start the new lxc add an admin user and add it to sudo group:
 
 >  #adduser admin
-
+>
 >  #usermod -aG sudo admin
 
 3.	Edit Source.list: 
@@ -24,28 +24,30 @@ Part A: setting the template.
 Add the following sources: 
 
 >  deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
-
+>
 >  deb-src http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
-
+>
 >  deb http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
-
+>
 >  deb-src http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
-
+>
 >  deb http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
-
+>
 >  deb-src http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
-
+>
 >  deb http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
-
+>
 >  deb-src http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
-
+>
 >  deb http://archive.canonical.com/ubuntu jammy partner
-
+>
 >  deb-src http://archive.canonical.com/ubuntu jammy partner
 
 3.	Update:
 >  #sudo apt update
+> 
 >  #sudo apt full-upgrade
+
 4.	Install the desktop environment: during the install you will see a screen asking which desktop you want:
 
   select lighdm.
@@ -98,7 +100,7 @@ After pulseaudio is restarted, the sound should start to work with xrdp sink app
 
 Part C: You can use/try a different desktop environment than xfce4, after all this is the beauty of LXC. before turning the new container to a template try different desktop environments. once you make your choice, remove/delete old desktop then set container as template in order to keep it to a small size. for UBUNTU-MATE desktop use the following:
 >  #sudo apt install lightdm ubuntu-mate-core ubuntu-mate-desktop -y
-
+>
 >  #sudo update-alternatives --set x-session-manager /usr/bin/mate-session
 
 References/Credits: I want to give credits to the following developers and their sites. i wouldn't have came up with the steps without the help of information they provided. https://github.com/neutrinolabs/xrdp https://linuxize.com/post/how-to-install-xrdp-on-ubuntu-18-04/ https://github.com/bmullan/ciab-remote-desktop/blob/master/mk-cn1-environment.sh https://linuxconfig.org/8-best-ubuntu-desktop-environments-18-04-bionic-beaver-linux http://c-nergy.be/blog/?p=14888 https://www.closingtags.com/custom-lxc-container-templates-in-proxmox-5-0/ https://blog.simos.info/how-to-run-...pps-in-lxd-containers-on-your-ubuntu-desktop/
