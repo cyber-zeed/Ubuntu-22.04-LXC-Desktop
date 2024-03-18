@@ -72,12 +72,19 @@ Add the following sources:
 Part B: installing XRDP with sound to work:
 1.	get latest download link of xrd-installer-1.2 from this website:
 >  #cd /
+> 
 >  #cd opt
->  #sudo wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.2.zip 
+> 
+>  #sudo wget https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.2.zip
+> 
 >  #sudo unzip xrdp-installer-1.4.2.zip
+> 
 >  #sudo chmod +x xrdp-installer-1.4.2.sh
+> 
 >  #./xrdp-installer-1.4.2.sh
+> 
 >  #sudo reboot
+> 
 
 2.	create a new user if you don't already have one (as root):
 >  #adduser admin
