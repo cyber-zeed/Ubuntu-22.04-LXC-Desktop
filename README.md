@@ -96,6 +96,7 @@ reboot container.
 
 3.	After rebooting the container, i was getting Dummy output in the Volume control and no sound output. To fix the issue restart pulseaudio server in the container by running the following command:
 >  #pulseaudio -k
+
 After pulseaudio is restarted, the sound should start to work with xrdp sink appearing in the volume control.
 
 Part C: You can use/try a different desktop environment than xfce4, after all this is the beauty of LXC. before turning the new container to a template try different desktop environments. once you make your choice, remove/delete old desktop then set container as template in order to keep it to a small size. for UBUNTU-MATE desktop use the following:
