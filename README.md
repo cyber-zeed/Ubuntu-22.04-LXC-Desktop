@@ -15,10 +15,11 @@ Part A: setting the template.
 2.	Log in as root once you start the new lxc add an admin user and add it to sudo group:
 
 >  adduser admin
+
 >  usermod -aG sudo admin
 
 3.	Edit Source.list: 
-  •	# sudo nano /etc/apt/sources.list
+>  # sudo nano /etc/apt/sources.list
 
 Add the following sources: 
 
