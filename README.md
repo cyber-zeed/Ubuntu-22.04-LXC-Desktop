@@ -13,8 +13,10 @@ Part A: setting the template.
 1.	Create a template for ubuntu, give it 100G of storage, 2 or 4 cpu (can change to what you want), specify the ip you want (ex: 192.168.1.10/24), provide a gateway or leave it DHCP and check the IP on the LXC container terminal.
 
 2.	Log in as root once you start the new lxc add an admin user and add it to sudo group:
-  •	# adduser admin
-  •	# usermod -aG sudo admin
+
+# adduser admin
+
+# usermod -aG sudo admin
 
 3.	Edit Source.list: 
   •	# sudo nano /etc/apt/sources.list
