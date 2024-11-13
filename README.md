@@ -4,7 +4,7 @@ Ubuntu-24.04-LXC-Desktop for Proxmox
 Ubuntu proxmox LXC Container with desktop
 
 Container for proxmox installed available
-https://drive.google.com/file/d/1nAw3IzSyrHoPunQ6JGkIvBsgK7hbByF6/view?usp=drive_link
+https://drive.google.com/drive/folders/1DwLBiezWIZzbYB00MAu6LosX8jI5Hq1D?usp=sharing
 
 root password: F6h(W*Tsps=De?+k
 admin password: F6h(W*Ts
